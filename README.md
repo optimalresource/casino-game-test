@@ -51,10 +51,10 @@ A full-featured casino gaming application built using **Node.js/Express** for th
   I maintained the existing sign-in flow, but the socket wasn't returning any response when someone tries signing in or signing up, so after some debugging, I understood that there was really no working database connection. To avoid doing so much on what I wasn't asked to do, I just created a simple mock database to use for the sign in and sign up and so if you clone the app, and install the packages and do the normal "npm run dev", the two servers will spin up and also a build for the client will be generated, and when you launch the app on port 1111, you'll notice that not only can a user connect their metamask, they can as well sign in and see the dashboard.
 
 #### To spin up this application, for test purposes, remember to fill these 4 environment variables:
-    - NODE_ENV=development
-    - PORT=1111
-    - BASE_URL=http://localhost:1111
-    - STRIPE_TEST_KEY=[Please put the value that was previously hardcoded in the code]
+    NODE_ENV=development
+    PORT=1111
+    BASE_URL=http://localhost:1111
+    STRIPE_TEST_KEY=[Please put the value that was previously hardcoded in the code]
 
 Please keep these environment variables inside a .env.development in the server folder. /server/.env.development
 
